@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+        width: 100%;
+        display: flex;
+        }
+        .filteredimage {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-image: url("pix-pxi.png");
+        background-size: cover;
+        }
+
+        .filteredimage.blue {
+        filter: sepia(1) hue-rotate(170deg) brightness(45%) saturate(1000%);
+        }
+
+        .filteredimage.pink {
+        filter: sepia(1) hue-rotate(251deg) brightness(100%) saturate(1000%);
+        }
+
+        .filteredimage:hover {
+        filter: sepia(1) hue-rotate(313deg) brightness(25%) saturate(1000%);
+        }
+    </style>
+    <div>
+        <div class="filteredimage original"></div>
+        <div class="filteredimage blue"></div>
+        <div class="filteredimage pink"></div>
+    </div>
+    
+</body>
+</html>
